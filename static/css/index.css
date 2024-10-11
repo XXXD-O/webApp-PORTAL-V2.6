@@ -1,0 +1,79 @@
+body {
+    background: #f80bec;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    text-align: center;
+    font-family: "MiFuente", Arial, sans-serif;
+}
+
+.centered-image {
+    display: block;
+    margin: 0 auto;
+}
+ h1 {
+    font-size: 20px;
+ }
+ h3 {
+    font-size: 8px;
+ }
+.parrafo-blanco {
+    color: white;
+    text-align: center;
+}
+
+header {
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center; /* Changed from right to center */
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+section {
+    margin: 20px;
+}
+
+footer {
+    background: #ccc;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    font-size: 16px; /* Adjusted font size for better readability */
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 400px;
+    height: 50px;
+    font-size: 16px; /* Adjusted font size for better readability */
+    padding: 10px;
+    border-radius: 5px; /* Changed from 0% to 5px for a subtle rounded effect */
+}
+
+input[type="submit"] {
+    width: 100px; /* Adjusted width for better balance */
+    height: 50px; /* Adjusted height to match text input */
+    font-size: 16px; /* Adjusted font size for better readability */
+    border-radius: 5px; /* Changed from 100% to 5px for consistency */
+}

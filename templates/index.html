@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTAL</title>
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://bootswatch.com/4/materia/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">PORTAL</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{url_for('Contacts')}}">Agenda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('Urls')}}">Mis Tiendas preferidas</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <section>
+        <h1 class="parrafo-blanco">Bienvenido a PORTAL</h1>
+        <div>
+            <img src="static/images/portal.jfif" alt="logo" class="centered-image">
+        </div>
+        <h3 class="parrafo-blanco">¡Realiza búsquedas de artículos,  copia la url de la barra de navegacion y pegala en Mis Tiendas Preferidas!</h3>
+    </section>
+
+    <div id="Buscar">
+        <form action="https://www.google.com/search" method="GET">
+            <input type="text" name="q" placeholder="Buscar en Google">
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-block">
+                    BUSCAR
+                </button>
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2024 PORTAL. Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
