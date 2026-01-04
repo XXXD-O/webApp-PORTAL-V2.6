@@ -1,8 +1,11 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_mysqldb import MySQL
 from math import ceil
+import os
+
 
 app = Flask(__name__)
+
 # Conexión a MySQL
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
@@ -121,4 +124,5 @@ def delete_url(id):
     return redirect(url_for('Urls'))
 
 if __name__ == '__main__':
-    app.run(port=3000, debug=True)
+    app.run(host='0.0.0.0', port=5000)
+
